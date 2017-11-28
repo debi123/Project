@@ -6,6 +6,9 @@ chmod 777 trial.csv
 cp hosts /home
 chmod 777 hosts
 
+cp tim_sample_data.txt /home
+chmod 777 tim_sample_data.txt
+
 apt-get -y update
 
 apt-get install -y openssh-server
