@@ -1,7 +1,7 @@
-Truncate tim_ericcson_bulk
+truncate 'tim_ericcson_bulk'
 
 create 'tim_ericcson_bulk' , 'ericcson'
 
-Truncate tbl_users_affected_cnt_hb
+truncate 'tbl_users_affected_cnt_hb'
 
-Truncate tbl_users_crossed_vollimit_hb
+truncate 'tbl_users_crossed_vollimit_hb'
