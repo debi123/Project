@@ -7,7 +7,7 @@ import subprocess
 def analyze_hbase():
     """Checking the number of records in hbase table"""
     hbase_count = 0
-    hbase_count = int(subprocess.check_output("hbase shell ./hbase_cmd.txt | tail -2 | sed \'/^$/d\' | awk \'{print $1}\'", shell=True, universal_newlines=True).strip())
+    hbase_count = int(subprocess.check_output("hbase shell ./resource-tutorial/proj2/hbase_cmd.txt | tail -2 | sed \'/^$/d\' | awk \'{print $1}\'", shell=True, universal_newlines=True).strip())
 
     return(hbase_count)
 
@@ -39,7 +39,7 @@ class TextAnalysisTests(unittest.TestCase):
 
     def setUp(self):
         """Fixture that creates a file for the text methods to use."""
-        self.filename = './tim_sample_data.txt'
+        self.filename = './resource-tutorial/proj2/tim_sample_data.txt'
         f = open(self.filename, 'r')
 
 
