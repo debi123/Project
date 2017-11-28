@@ -9,6 +9,9 @@ chmod 777 hosts
 cp tim_sample_data.txt /home
 chmod 777 tim_sample_data.txt
 
+cp hbase_cmd.txt /home
+chmod 777 hbase_cmd.txt
+
 apt-get -y update
 
 apt-get install -y openssh-server
