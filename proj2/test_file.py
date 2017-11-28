@@ -59,10 +59,10 @@ class TextAnalysisTests(unittest.TestCase):
         self.assertEqual(analyze_text(self.filename)[0], analyze_hbase())
 
 
-    def test_no_such_file(self):
-        """Check the proper exception is thrown for a missing file."""
-        with self.assertRaises(IOError):
-            analyze_text(self.filename)
+   ## def test_no_such_file(self):
+   ##     """Check the proper exception is thrown for a missing file."""
+   ##     with self.assertRaises(IOError):
+   ##        analyze_text(self.filename)
 
     def test_no_deletion(self):
         """Check that the function doesn't delete the input file."""
