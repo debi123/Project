@@ -5,3 +5,5 @@ create 'tim_ericcson_bulk' , 'ericcson'
 truncate 'tbl_users_affected_cnt_hb'
 
 truncate 'tbl_users_crossed_vollimit_hb'
+
+exit
